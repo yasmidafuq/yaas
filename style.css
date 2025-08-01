@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color:aqua;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  border-color: white;
+}
+
+/* Main Content */
+main {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Cards */
+
+.card {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 4rem;
+  max-width: 1200px;
+  width: 98%;
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.25);
+  transition: transform 0.3s;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color:whitesmoke;
+  margin-bottom: 1rem;
+}
+
+.card p,
+.card ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
